@@ -1,5 +1,6 @@
 package com.github.curriculeon;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -24,12 +25,22 @@ public class StringParser {
         if( input == null){
             return null;
         }
-        
-        return null;
+        Integer[] parsedNumbers = new Integer[input.length()];
+        for (int i = 0; i < input.length(); i++) {
+            parsedNumbers[i] = input.indexOf(i);
+        }
+        return parsedNumbers;
     }
 
     public static List<String> toList(String[] input) {
-        return null;
+        if( input == null){
+            return null;
+        }
+        List<String> addThatJawnToAList = new ArrayList<>();
+        for (int i = 0; i < input.length; i++) {
+            addThatJawnToAList.add(input[i]);
+        }
+        return addThatJawnToAList;
     }
 
     public static String[] parseStrings(String input) {
