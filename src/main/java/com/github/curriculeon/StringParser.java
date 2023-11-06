@@ -8,10 +8,23 @@ import java.util.List;
 public class StringParser {
 
     public static Character[] parseCharacters(String input) {
-        return null;
+        if( input == null){
+            return null;
+        }
+
+        Character[] parsedChars = new Character[input.length()];
+            for (int i = 0; i < input.length(); i++) {
+            parsedChars[i] = input.charAt(i);
+        }
+        return parsedChars;
+
     }
 
     public static Integer[] parseIntegers(String input) {
+        if( input == null){
+            return null;
+        }
+        
         return null;
     }
 
