@@ -44,6 +44,13 @@ public class StringParser {
     }
 
     public static String[] parseStrings(String input) {
-        return null;
+        if( input == null){
+            return null;
+        }
+        String[] stringParse = new String[input.length()];
+        for (int i = 0; i < input.length(); i++) {
+            stringParse[i] = String.valueOf(input.charAt(i));
+        }
+        return stringParse;
     }
 }
